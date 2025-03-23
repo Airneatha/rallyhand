@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RallyHand</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stats.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Stats</h1>
+    </div>
+
+    <main>
+      <section id="player-info">
+          <h2>Player Information</h2>
+          <div id="player-details">
+              <p><strong>Name:</strong> <span id="player-name"></span></p>
+              <p><strong>Age:</strong> <span id="player-age"></span></p>
+              <p><strong>Ranking:</strong> <span id="player-ranking"></span></p>
+              <p><strong>Dominant Hand:</strong> <span id="player-dominant-hand"></span></p>
+          </div>
+      </section>
+  
+      <section id="training-stats">
+          <h2>Training Performance</h2>
+          <div class="stat-item">
+              <p><strong>Average Serve Speed:</strong> <span id="serve-speed"></span></p>
+              <p><strong>Forehand Accuracy:</strong> <span id="forehand-accuracy"></span></p>
+              <p><strong>Backhand Accuracy:</strong> <span id="backhand-accuracy"></span></p>
+              <p><strong>Volley Success Rate:</strong> <span id="volley-success"></span></p>
+          </div>
+      </section>
+  
+      <section id="game-stats">
+          <h2>Game Performance</h2>
+          <div class="stat-item">
+              <p><strong>Matches Played:</strong> <span id="matches-played"></span></p>
+              <p><strong>Matches Won:</strong> <span id="matches-won"></span></p>
+              <p><strong>Win Percentage:</strong> <span id="win-percentage"></span></p>
+              <p><strong>Aces:</strong> <span id="aces"></span></p>
+              <p><strong>Double Faults:</strong> <span id="double-faults"></span></p>
+          </div>
+      </section>
+  
+      <section id="physical-stats">
+          <h2>Physical Training</h2>
+          <div class="stat-item">
+              <p><strong>Running Distance (Weekly):</strong> <span id="running-distance"></span></p>
+              <p><strong>Strength Training (Hours):</strong> <span id="strength-training"></span></p>
+              <p><strong>Endurance Level:</strong> <span id="endurance-level"></span></p>
+              <p><strong>Agility Score:</strong> <span id="agility-score"></span></p>
+          </div>
+      </section>
+  
+      <section id="additional-stats">
+          <h2>Additional Statistics</h2>
+          <div class="stat-item">
+              <p><strong>Break Point Conversion:</strong> <span id="break-point-conversion"></span></p>
+              <p><strong>Return Success Rate:</strong> <span id="return-success"></span></p>
+              <p><strong>Unforced Errors:</strong> <span id="unforced-errors"></span></p>
+              <p><strong>Net Points Won:</strong> <span id="net-points-won"></span></p>
+          </div>
+      </section>
+  
+      <section id="update-stats">
+          <h2>Update Player Stats</h2>
+          <form id="stats-form">
+              <label for="name-input">Name:</label>
+              <input type="text" id="name-input" name="name-input">
+  
+              <label for="age-input">Age:</label>
+              <input type="number" id="age-input" name="age-input">
+  
+              <label for="ranking-input">Ranking:</label>
+              <input type="number" id="ranking-input" name="ranking-input">
+  
+              <label for="dominant-hand-input">Dominant Hand:</label>
+              <select id="dominant-hand-input" name="dominant-hand-input">
+                  <option value="">Select Hand</option>
+                  <option value="Right">Right</option>
+                  <option value="Left">Left</option>
+              </select>
+  
+              <label for="serve-speed-input">Serve Speed:</label>
+              <input type="text" id="serve-speed-input" name="serve-speed-input">
+  
+              <label for="forehand-accuracy-input">Forehand Accuracy:</label>
+              <input type="text" id="forehand-accuracy-input" name="forehand-accuracy-input">
+  
+              <label for="backhand-accuracy-input">Backhand Accuracy:</label>
+              <input type="text" id="backhand-accuracy-input" name="backhand-accuracy-input">
+  
+              <label for="volley-success-input">Volley Success:</label>
+              <input type="text" id="volley-success-input" name="volley-success-input">
+  
+              <label for="matches-played-input">Matches Played:</label>
+              <input type="number" id="matches-played-input" name="matches-played-input">
+  
+              <label for="matches-won-input">Matches Won:</label>
+              <input type="number" id="matches-won-input" name="matches-won-input">
+  
+              <label for="win-percentage-input">Win Percentage:</label>
+              <input type="text" id="win-percentage-input" name="win-percentage-input">
+  
+              <label for="aces-input">Aces:</label>
+              <input type="number" id="aces-input" name="aces-input">
+  
+              <label for="double-faults-input">Double Faults:</label>
+              <input type="number" id="double-faults-input" name="double-faults-input">
+  
+              <label for="running-distance-input">Running Distance (Weekly):</label>
+              <input type="text" id="running-distance-input" name="running-distance-input">
+  
+              <label for="strength-training-input">Strength Training (Hours):</label>
+              <input type="text" id="strength-training-input" name="strength-training-input">
+  
+              <label for="endurance-level-input">Endurance Level:</label>
+              <input type="text" id="endurance-level-input" name="endurance-level-input">
+  
+              <label for="agility-score-input">Agility Score:</label>
+              <input type="number" id="agility-score-input" name="agility-score-input">
+  
+              <label for="break-point-conversion-input">Break Point Conversion:</label>
+              <input type="text" id="break-point-conversion-input" name="break-point-conversion-input">
+  
+              <label for="return-success-input">Return Success:</label>
+              <input type="text" id="return-success-input" name="return-success-input">
+  
+              <label for="unforced-errors-input">Unforced Errors:</label>
+              <input type="number" id="unforced-errors-input" name="unforced-errors-input">
+  
+              <label for="net-points-won-input">Net Points Won:</label>
+              <input type="text" id="net-points-won-input" name="net-points-won-input">
+  
+              <div class="form-buttons">
+                  <button type="submit">Update Stats</button>
+                  <button type="button" id="clear-inputs-button">Clear Inputs</button>
+              </div>
+          </form>
+      </section>
+  </main>
+
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+      
+     <aside class="sidebar">
+      <header>TURF</header>
+      <ul>
+        <li >
+          <a href="index.html">
+            <i class="fas fa-home"></i>Dashboard</a>
+        </li>
+
+        <li>
+          <a href="sessions2.html">
+            <i class="fa-solid fa-calendar-days"></i>Sessions</a>
+        </li>
+
+        <li class="active">
+          <a href="stats.html"><i class="fa-solid fa-chart-line"></i>Stats</a>
+        </li>
+
+        <li>
+          <a href="milestones.html"
+            ><i class="fa-solid fa-trophy"></i>Milestones</a>
+        </li>
+
+        <li>
+          <a href="schedule.html"
+            ><i class="fa-solid fa-calendar-week"></i>Schedule</a>
+        </li>
+
+        <li>
+          <a href="equip.html"><i class="fa-solid fa-suitcase-rolling"></i>Equipments</a>
+        </li>
+      </ul>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </aside>
+    <footer>
+      <p>&copy; 2025 RallyHand. All rights reserved.</p>
+      <p><a href="#">Contact Us</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="stats.js"></script>
+  </body>
+</html>

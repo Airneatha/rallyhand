@@ -1,0 +1,117 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.hero {
+    background-color: transparent; 
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.hero h1 {
+    color: lightgreen;
+    font-style: italic;
+    font-weight: bold;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0a5275;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#addMilestoneForm input[type="text"],
+#addMilestoneForm textarea,
+#addMilestoneForm input[type="date"],
+#addMilestoneForm select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: transparent;
+    color: lightgreen;
+    font-size: 20px;
+}
+
+#addMilestoneForm #milestonePriority{
+    background-color: black;
+}
+
+#addMilestoneForm button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#addMilestoneForm button:hover {
+    background-color: #08405a;
+}
+
+#milestoneList {
+    list-style: none;
+    padding: 0;
+}
+
+#milestoneList li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#milestoneList li .milestone-details {
+    flex-grow: 1;
+}
+
+#milestoneList li .milestone-actions {
+    display: flex;
+}
+
+#milestoneList li button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#milestoneList li button.complete {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#milestoneList li button.delete {
+    background-color: #f44336;
+    color: white;
+}

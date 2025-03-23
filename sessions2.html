@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>RallyHand</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="sessions.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+  </head>
+<body>
+  <main>
+    <div class="hero">
+        <h1>Training Sessions</h1>
+    </div>
+      <section id="add-session">
+          <h2>Add New Session</h2>
+          <form id="session-form">
+              <input type="date" id="date" required>
+              <input type="time" id="time" required>
+              <input type="text" id="duration" placeholder="Duration" required>
+              <input type="text" id="venue" placeholder="Venue" required>
+              <button type="submit">Add Session</button>
+          </form>
+        </session>
+      <section id="sessions-list">
+        <h2>Session List</h2>
+        <ul id="session-items">
+        </ul>
+      </section>
+  </main>
+
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+
+   <aside class="sidebar">
+      <header>TURF</header>
+      <ul>
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i>Dashboard</a>
+        </li>
+
+        <li class="active">
+          <a href="sessions2.html"><i class="fa-solid fa-calendar-days"></i>Sessions</a>
+        </li>
+
+        <li>
+          <a href="stats.html"><i class="fa-solid fa-chart-line"></i>Stats</a>
+        </li>
+
+        <li>
+          <a href="milestones.html"><i class="fa-solid fa-trophy"></i>Milestones</a>
+        </li>
+
+        <li>
+          <a href="schedule.html"><i class="fa-solid fa-calendar-week"></i>Schedule</a>
+        </li>
+
+        <li>
+          <a href="equip.html"><i class="fa-solid fa-suitcase-rolling"></i>Equipments</a>
+        </li>
+      </ul>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+  </aside>
+    <script src="script.js"></script>
+    <script src="sessions.js"></script>
+</body>
+</html>

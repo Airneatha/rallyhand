@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+.hero {
+    text-align: center; 
+    padding: 150px 20px; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: #fff; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-top: -100px;
+}
+
+.hero h1 {
+    font-size: 5em; /* Larger heading */
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-style:italic;
+    color: lightgreen;
+    cursor: pointer;
+}
+
+
+
+main {
+    display: flex;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h2 {
+    color: lightgreen;
+    margin-bottom: 15px;
+}
+
+.equipment-item {
+    margin-bottom: 10px;
+}
+
+.equipment-item h3 {
+    margin-bottom: 10px;
+    color: #0a5275;
+}
+
+.equipment-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.equipment-details label {
+    text-align: right;
+    padding-right: 5px;
+    color: lightgreen;
+}
+
+.equipment-details input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: white;
+    font-size:20px;
+    background-color: grey;
+}
+
+.main-buttons {
+    
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-buttons button {
+    padding: 10px 15px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0a5275;
+    color: white;
+    cursor: pointer;
+
+}
+
+.main-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.main-buttons #clear-all{
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Stack sections vertically */
+        padding: 10px; /* Reduce padding */
+    }
+
+    section {
+        margin-bottom: 10px; /* Reduce section margins */
+    }
+
+    .equipment-details {
+        grid-template-columns: 1fr; /* Stack labels and inputs */
+    }
+
+    .equipment-details label {
+        text-align: left; /* Align labels to the left */
+    }
+
+    .equipment-details input[type="text"] {
+        font-size: 16px; 
+    }
+
+    .hero h1{
+        font-size: 3em; 
+    }
+}
