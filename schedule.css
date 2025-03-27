@@ -127,3 +127,36 @@ section h2 {
 #event-form button:hover {
     background-color: #08405a;
 }
+
+
+@media (max-width: 768px) {
+    main {
+        width: 95%; /* Use more width on mobile */
+        margin: 10px auto; /* Adjust margin */
+        margin-top: 0; /* Remove negative margin on mobile */
+        font-size: 14px; /* Further reduce font on mobile */
+        padding: 5px; /* Reduce padding further */
+    }
+
+    .hero{
+        margin-top: 0; /* remove negative margin */
+    }
+
+    section {
+        padding: 10px; /* Reduce padding further */
+    }
+
+    section h2 {
+        font-size: 1.1em; /* Reduce heading size further */
+    }
+
+    #calendar-grid {
+        grid-template-columns: repeat(3, 1fr); /* Adjust grid for smaller screens */
+    }
+
+    #event-form input[type="text"],
+    #event-form input[type="date"],
+    #event-form input[type="time"] {
+        font-size: 14px; /* Further reduce input font */
+    }
+}

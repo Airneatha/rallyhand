@@ -1,10 +1,6 @@
 main {
     width: 80%;
     margin: 20px auto;
-    /* background-color: #0a5275;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .hero {
@@ -123,4 +119,47 @@ main {
 #sessions-list .session-item .session-actions button.delete {
     background-color: #f44336;
     color: white;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        width: 95%; /* Make main container wider */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .hero {
+        padding: 10px; /* Reduce hero padding */
+    }
+
+    .hero h1 {
+        font-size: 2em; /* Reduce hero heading size */
+    }
+
+    #add-session h2,
+    #sessions-list h2 {
+        font-size: 30px; /* Reduce section heading size */
+    }
+
+    #session-form input[type="date"],
+    #session-form input[type="time"],
+    #session-form input[type="text"] {
+        font-size: 16px; /* Reduce input font size */
+    }
+
+    #sessions-list .session-item {
+        flex-direction: column; /* Stack session details and actions */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    #sessions-list .session-item .session-actions {
+        margin-top: 10px; /* Add margin to actions */
+        width: 100%; /* Make action buttons full width */
+        justify-content: space-around; /* Distribute buttons evenly */
+    }
+
+    #sessions-list .session-item .session-actions button {
+        margin-left: 0; /* Remove left margin from buttons */
+        width: 45%; /* Make buttons take up half the width */
+    }
 }
